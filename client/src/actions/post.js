@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {setAlert} from './alert'
-import {GET_POSTS,POST_ERROR,UPDATE_LIKES,DELETE_POST,ADD_POST,GET_POST,ADD_COMMENT,REMOVE_COMMENT} from './types'
+import {GET_POSTS,POST_ERROR,UPDATE_LIKES,DELETE_POST,ADD_POST,GET_POST,ADD_COMMENT,REMOVE_COMMENT,USER_LOADED} from './types'
 
 //get posts
 export const getPosts=()=>async dispatch=>{
@@ -116,6 +116,7 @@ export const addPost = (formData) => async dispatch => {
 export const getPost = (id) => async dispatch => {
     try {
         const res = await axios.get(`/api/posts/${id}`)
+
 
         dispatch({
             type: GET_POST,
