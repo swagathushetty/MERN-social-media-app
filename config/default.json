@@ -1,4 +1,7 @@
 
 {
-    "mongoURI":"mongodb+srv://swagath123:swagath123@devconnector-dgssw.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI":"mongodb+srv://swagath123:swagath123@devconnector-dgssw.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "githubClientId":"0a09451e4ee5b629408b",
+    "githubSecret":"5034b35544fec042499656d3aa0af44437ad92dd"
 }
